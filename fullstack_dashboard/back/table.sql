@@ -29,7 +29,7 @@ CREATE TABLE revenue(
   offline INTEGER NOT NULL,
   create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
   update_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
-)
+);
 
 INSERT INTO revenue (day, online, offline) 
 VALUES 
@@ -49,7 +49,7 @@ CREATE TABLE customers(
   this_month INTEGER NOT NULL,
   create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
   update_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
-)
+);
 
 INSERT INTO customers (month, last_month, this_month) VALUES 
 ('Jan', 400, 240),
@@ -68,7 +68,7 @@ CREATE TABLE target_reality(
   target INTEGER NOT NULL,
   create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
   update_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
-)
+);
 
 INSERT INTO target_reality (month, reality, target) 
 VALUES 
@@ -87,7 +87,7 @@ CREATE TABLE top_products(
   salesPercent INTEGER NOT NULL,
   create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
   update_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
-)
+);
 
 INSERT INTO top_products (name, papularityPercent, salesPercent) 
 VALUES 
@@ -103,7 +103,7 @@ CREATE TABLE sales_map(
   fill_color VARCHAR(30) NOT NULL,
   create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
   update_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
-)
+);
 
 INSERT INTO sales_map (country_id, country_name, fill_color) VALUES 
 ('840', 'United States of America', 'violet'),
@@ -116,3 +116,25 @@ INSERT INTO sales_map (country_id, country_name, fill_color) VALUES
 ('036', 'Australia', 'red'),
 ('124', 'Canada', 'dodgerBlue'),
 ('634', 'Quatar', 'emerald');
+
+
+CREATE TABLE volume_services(
+  id SERIAL PRIMARY KEY NOT NULL,
+  name VARCHAR(10) NOT NULL,
+  volume INTEGER NOT NULL,
+  services INTEGER NOT NULL,
+  create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+  update_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
+)
+
+
+INSERT INTO volume_services (name, volume, services) VALUES
+('A', 400, 240),
+('B', 300, 139),
+('C', 200, 980),
+('D', 278, 390),
+('E', 189, 480),
+('F', 239, 380),
+('G', 349, 430);
+
+

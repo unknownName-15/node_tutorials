@@ -1,6 +1,6 @@
-import React from 'react'
-import { Images } from '../../assets/images'
-import { Icons } from '../../assets/icons'
+import React from 'react';
+import { Images } from '../../assets/images';
+import { Icons } from '../../assets/icons';
 
 const AppbarProfile = () => {
   return (
@@ -16,7 +16,7 @@ const AppbarProfile = () => {
         <div className="drop-info-text">
           <div className="info-text-group flex flex-col min-w-20 leading-4 justify-center mt-2">
             <span className="font-semibold text-ellipsis overflow-hidden whitespace-normal">
-              Marshall
+              Seunghee
             </span>
             <span className="text-sm text-gray-400">Admin</span>
           </div>
@@ -28,7 +28,7 @@ const AppbarProfile = () => {
         />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AppbarProfile
+export default AppbarProfile;

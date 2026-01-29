@@ -12,11 +12,14 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.11.2",
     "axios": "^1.13.3",
+    "map": "^1.0.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-icons": "^5.5.0",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.13.0",
+    "react-simple": "^1.2.3",
+    "react-simple-maps": "^3.0.0",
     "recharts": "^2.15.4",
     "redux": "^5.0.1"
   },
