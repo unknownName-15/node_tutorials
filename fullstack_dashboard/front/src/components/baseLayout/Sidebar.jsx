@@ -10,6 +10,7 @@ const Sidebar = () => {
   const [currentTab, clickedTab] = useState(0);
 
   const isSidebarOpen = useSelector((state) => state.sidebar.isSidebarOpen);
+  console.log(isSidebarOpen)
   const dispatch = useDispatch();
 
   const selectMenuHandler = (index) => {
@@ -32,7 +33,7 @@ const Sidebar = () => {
         </div>
         <button
           className="sidebar-close-btn text-black p=[0.125rem] rounded-sm bg-white cursor-pointer hover:bg-gray-300"
-          onClick={dispatch(setSidebarOpen())}
+          onClick={() => dispatch(setSidebarOpen())}
         >
           <MdOutlineClose />
         </button>

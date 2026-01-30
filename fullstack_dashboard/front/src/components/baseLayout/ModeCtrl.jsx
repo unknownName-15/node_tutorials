@@ -15,7 +15,7 @@ const ModeCtrl = () => {
   }
   return (
     <button onClick={toggleTheme} className='text-white px-5 py-3'>
-      <img src={darkMode ? Icons.SunFill : Icons.MoonFill} alt="mode button" className='w-4 h-4 dark: invert-[1] dark: brightness-[100%]' />
+      <img src={darkMode ? Icons.SunFill : Icons.MoonFill} alt="mode button" className='w-4 h-4 dark:invert-[100%]' />
     </button>
   )
 }

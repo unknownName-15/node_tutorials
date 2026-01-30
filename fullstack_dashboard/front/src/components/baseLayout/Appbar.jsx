@@ -13,7 +13,7 @@ const Appbar = () => {
           <button type="button" className='items-center hidden'>
             <MdOutlineMenu size={24} />
           </button>
-          <h3 className='text-xl font-semibold'>Dashbaord</h3>
+          <h3 className='text-xl font-semibold'>Dashboard</h3>
         </div>
         <div className='appbar-right flex items-center flex-wrap'>
           <div className='appbar-search'>

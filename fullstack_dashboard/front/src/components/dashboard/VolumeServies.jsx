@@ -27,7 +27,7 @@ const VolumeServies = () => {
   };
 
   return (
-    <div className="block-wrap ml-[14px] mt-[14px]">
+    <div className="block-wrap ml-[14px] mt-[14px] mb-[14px]">
       <HeadTitle title="Volume vs Services Level" />
       <div className="w-full h-[250px] mb-5">
         <ResponsiveContainer>
